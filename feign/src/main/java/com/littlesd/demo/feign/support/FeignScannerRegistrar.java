@@ -1,4 +1,4 @@
-package com.littlesd.feign.support;
+package com.littlesd.demo.feign.support;
 
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.context.ResourceLoaderAware;

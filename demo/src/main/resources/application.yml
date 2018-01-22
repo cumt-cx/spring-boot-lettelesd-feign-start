@@ -7,10 +7,6 @@ feign:
         K-AppKey: helloworld
         K-SignVer: 2
       loglovel: FULL
-      contract-class: JAXRSContract.class
-      client-class: ApacheHttpClient.class
-      encoderClass: JacksonEncoder.class
-      decoderClass: JacksonDecoder.class
     huobi:
       base-url: https://api.huobi.pro/market
       loglovel: FULL

@@ -1,4 +1,4 @@
-package com.littlesd.feign.support;
+package com.littlesd.demo.feign.support;
 
 import org.springframework.beans.factory.annotation.AnnotatedBeanDefinition;
 import org.springframework.beans.factory.config.BeanDefinitionHolder;

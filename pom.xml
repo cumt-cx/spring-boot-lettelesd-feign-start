@@ -17,6 +17,7 @@
     <properties>
         <spring.boot.version>1.4.1.RELEASE</spring.boot.version>
         <feign.version>8.18.0</feign.version>
+        <javax.ws.rs.version>2.0.1</javax.ws.rs.version>
 
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -81,6 +82,11 @@
                 <version>${feign.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>javax.ws.rs</groupId>
+                <artifactId>javax.ws.rs-api</artifactId>
+                <version>${javax.ws.rs.version}</version>
+            </dependency>
 
         </dependencies>
 

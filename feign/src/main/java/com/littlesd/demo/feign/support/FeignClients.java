@@ -1,4 +1,4 @@
-package com.littlesd.feign.support;
+package com.littlesd.demo.feign.support;
 
 import org.springframework.context.annotation.Import;
 

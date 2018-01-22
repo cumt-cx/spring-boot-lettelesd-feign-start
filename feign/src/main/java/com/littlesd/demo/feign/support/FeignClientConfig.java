@@ -1,4 +1,4 @@
-package com.littlesd.feign.support;
+package com.littlesd.demo.feign.support;
 
 public class FeignClientConfig extends FeignConfig {
 
