@@ -54,6 +54,25 @@ public interface GitHubClientAPI {
 }
 ```
 
+* 接口包的扫描
+
+``` java
+@SpringBootApplication
+@FeignClients({
+        @FeignClient(
+                name = "github", scanPackages = {
+                "com.littlesd.demo.feign.github"
+        })
+})
+public class Application {
+
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
+
+}
+```
+
 * GitHubClientAPI的使用
 
 ```java
