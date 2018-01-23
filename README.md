@@ -7,7 +7,7 @@
 # 打包
 修改相关的maven私服地址,在feign工程下
 ```shell
-gradle clean install
+mvn clean install
 ```
 # 使用方式
 ## 依赖
@@ -20,6 +20,7 @@ gradle clean install
  ```
 ## 集成
 在spring-boot项目的application.yml文件中加入配置实例如下：
+
 ```
 feign:
   clients:
@@ -35,8 +36,9 @@ feign:
      
 ```
 ## 使用
-1. 将上述配置项赋予正确的值
-2. interface定义以及返回http序列化对象定义
+* 将上述配置项赋予正确的值
+* interface定义以及返回http序列化对象定义
+
 ```java
 package com.littlesd.demo.feign.github;
 
@@ -51,7 +53,9 @@ public interface GitHubClientAPI {
 
 }
 ```
-3. GitHubClientAPI的使用
+
+* GitHubClientAPI的使用
+
 ```java
 @RestController
 @RequestMapping("/github")
