@@ -6,7 +6,6 @@ feign:
         K-AppCode: java
         K-AppKey: helloworld
         K-SignVer: 2
-      loglovel: FULL
     huobi:
       base-url: https://api.huobi.pro/market
       loglovel: FULL

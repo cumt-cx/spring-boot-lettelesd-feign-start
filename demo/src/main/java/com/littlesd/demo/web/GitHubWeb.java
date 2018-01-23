@@ -1,6 +1,7 @@
 package com.littlesd.demo.web;
 
 import com.littlesd.demo.feign.github.GitHubClientAPI;
+import com.littlesd.demo.feign.github.GitHubUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,8 +16,8 @@ public class GitHubWeb {
     private GitHubClientAPI gitHubClientAPI;
 
     @RequestMapping(value = "/users/{user}")
-    public String getUser(@PathVariable(value = "user")String userName){
-        return gitHubClientAPI.getUser(userName).toString();
+    public GitHubUser getUser(@PathVariable(value = "user")String userName){
+        return gitHubClientAPI.getUser(userName);
     }
 
     /**
